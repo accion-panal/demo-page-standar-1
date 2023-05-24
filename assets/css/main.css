@@ -127,6 +127,7 @@ section {
   background-position: center;
   background-repeat: no-repeat;
 }
+
 .breadcrumbs__intranet .intranet-form .card-item {
   background-color: #3d3d3d !important;
 }
@@ -156,6 +157,7 @@ section {
 .intranet-form .card-item form label {
   color: var(--text-white) !important;
 }
+
 .intranet-form .card-item form button {
   background-color: var(--text-white) !important;
   color: #3d3d3d !important;
@@ -200,11 +202,11 @@ section {
   text-decoration: underline;
 }
 
-.breadcrumbs ol li + li {
+.breadcrumbs ol li+li {
   padding-left: 10px;
 }
 
-.breadcrumbs ol li + li::before {
+.breadcrumbs ol li+li::before {
   display: inline-block;
   padding-right: 10px;
   color: var(--text-white);
@@ -262,8 +264,7 @@ section {
   top: calc(50% - 30px);
   left: calc(50% - 30px);
   border: 6px solid #fff;
-  border-color: var(--color-primary) transparent var(--color-primary)
-    transparent;
+  border-color: var(--color-primary) transparent var(--color-primary) transparent;
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -357,7 +358,7 @@ section {
     position: relative;
   }
 
-  .navbar > ul > li {
+  .navbar>ul>li {
     white-space: nowrap;
     padding: 10px 0 10px 28px;
   }
@@ -385,7 +386,7 @@ section {
     margin-left: 5px;
   }
 
-  .navbar > ul > li > a:before {
+  .navbar>ul>li>a:before {
     content: "";
     position: absolute;
     width: 100%;
@@ -399,7 +400,7 @@ section {
   }
 
   .navbar a:hover:before,
-  .navbar li:hover > a:before,
+  .navbar li:hover>a:before,
   .navbar .active:before {
     visibility: visible;
     width: 100%;
@@ -408,7 +409,7 @@ section {
   .navbar a:hover,
   .navbar .active,
   .navbar .active:focus,
-  .navbar li:hover > a {
+  .navbar li:hover>a {
     color: #fff;
   }
 
@@ -445,11 +446,11 @@ section {
 
   .navbar .dropdown ul a:hover,
   .navbar .dropdown ul .active:hover,
-  .navbar .dropdown ul li:hover > a {
+  .navbar .dropdown ul li:hover>a {
     color: var(--color-primary);
   }
 
-  .navbar .dropdown:hover > ul {
+  .navbar .dropdown:hover>ul {
     opacity: 1;
     top: 100%;
     visibility: visible;
@@ -461,7 +462,7 @@ section {
     visibility: hidden;
   }
 
-  .navbar .dropdown .dropdown:hover > ul {
+  .navbar .dropdown .dropdown:hover>ul {
     opacity: 1;
     top: 0;
     left: 100%;
@@ -474,12 +475,13 @@ section {
     left: -90%;
   }
 
-  .navbar .dropdown .dropdown:hover > ul {
+  .navbar .dropdown .dropdown:hover>ul {
     left: -100%;
   }
 }
 
 @media (min-width: 1280px) {
+
   .mobile-nav-show,
   .mobile-nav-hide {
     display: none;
@@ -537,7 +539,7 @@ section {
   .navbar a:hover,
   .navbar .active,
   .navbar .active:focus,
-  .navbar li:hover > a {
+  .navbar li:hover>a {
     color: #fff;
   }
 
@@ -551,8 +553,8 @@ section {
     border: 1px solid #222428;
   }
 
-  .navbar .dropdown > .dropdown-active,
-  .navbar .dropdown .dropdown > .dropdown-active {
+  .navbar .dropdown>.dropdown-active,
+  .navbar .dropdown .dropdown>.dropdown-active {
     display: block;
   }
 
@@ -666,7 +668,7 @@ section {
     height: 540px;
     width: 110%;
     font-size: 12px;
-  
+
   }
 
   .filter-search .container .row input,
@@ -706,7 +708,7 @@ section {
   background-color: transparent;
 }
 
-.radio-item input[type="radio"]:checked + label:after {
+.radio-item input[type="radio"]:checked+label:after {
   border-radius: 11px;
   width: 12px;
   height: 12px;
@@ -819,11 +821,9 @@ section {
 # Contact Form Section
 --------------------------------------------------------------*/
 .contact-form {
-  background-image: linear-gradient(
-      to right,
+  background-image: linear-gradient(to right,
       hsla(0, 0%, 26%, 0.514) 0%,
-      hsla(0, 0%, 0%, 0.616) 100%
-    ),
+      hsla(0, 0%, 0%, 0.616) 100%),
     url("../img/hero-carousel/hero-carousel-2.jpg");
   background-size: cover;
   background-position: center center;
@@ -866,6 +866,7 @@ section {
   color: #ffffff !important;
   border-radius: 25px;
 }
+
 .contact-form .form-left label {
   color: #ffffff !important;
 }
@@ -899,6 +900,7 @@ section {
   color: #000;
   font-weight: 500;
 }
+
 .btnVerMasProps:hover {
   background: #000;
   color: #fff;
@@ -1007,8 +1009,7 @@ section {
   float: left;
   margin: 0 1.5rem 0.75rem 0;
   color: var(--text-white);
-  background: var(--highlight1)
-    linear-gradient(to bottom right, var(--highlight1) 25%, var(--highlight2));
+  background: var(--highlight1) linear-gradient(to bottom right, var(--highlight1) 25%, var(--highlight2));
   text-shadow: 0 0 2px var(--highlight1);
   border-radius: 50%;
   display: inline-flex;
@@ -1037,6 +1038,7 @@ section {
   display: flex;
   justify-content: center;
 }
+
 /* Service Steps style */
 
 .services .row {
@@ -1219,6 +1221,7 @@ section {
     height: 70vh;
   }
 }
+
 /*--------------------------------------------------------------
 # Blog
 --------------------------------------------------------------*/
@@ -1433,6 +1436,7 @@ footer .container .footer-nav {
   background-color: #3d3d3d !important;
   color: #ffffff;
 }
+
 .form-control {
   background-color: #3d3d3d !important;
   border: none;
@@ -1507,9 +1511,9 @@ footer .container .footer-nav {
   color: white;
 }
 
-@media (max-width: 574px){
+@media (max-width: 574px) {
   .advanced-search {
-   height: 100%;
+    height: 100%;
   }
 }
 
@@ -1547,6 +1551,7 @@ footer .container .footer-nav {
   background-color: #3d3d3d !important;
   color: #ffffff;
 }
+
 .form-control {
   background-color: #3d3d3d !important;
   border: none;
@@ -1565,7 +1570,7 @@ footer .container .footer-nav {
   flex-direction: column;
   color: var(--light);
   padding: 1.5rem;
-  
+
 }
 
 .advanced-search2 form select,
@@ -1736,9 +1741,42 @@ footer .container .footer-nav {
   padding: 2rem 0;
 }
 
-#map 
-{ 
-  display: flex; 
+#map {
+  display: flex;
   top: 0;
-  bottom: 0; 
-  width: 100%; }
+  bottom: 0;
+  width: 100%;
+}
+
+
+/*--------------------------------------------------------------
+# Font responsive
+--------------------------------------------------------------*/
+
+.font_size_text {
+  font-size: 3em;
+}
+
+@media (max-width: 800px) {
+  .font_size_text {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 400px) {
+  .font_size_text {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 470px) {
+  .separation_div {
+    padding-top: 14em !important;
+  }
+}
+
+@media (max-width: 766px) {
+  .margins_div{
+    margin-top: 19rem !important;
+  }
+}
